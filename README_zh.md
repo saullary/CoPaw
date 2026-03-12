@@ -115,19 +115,19 @@ copaw app
 **macOS / Linux：**
 
 ```bash
-curl -fsSL https://copaw.agentscope.io/install.sh | bash
+curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
 ```
 
 如需安装 Ollama 支持：
 
 ```bash
-curl -fsSL https://copaw.agentscope.io/install.sh | bash -s -- --extras ollama
+curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama
 ```
 
 如需安装多个扩展（例如 Ollama + llama.cpp）：
 
 ```bash
-curl -fsSL https://copaw.agentscope.io/install.sh | bash -s -- --extras ollama,llamacpp
+curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama,llamacpp
 ```
 
 **Windows (CMD):**
@@ -147,6 +147,7 @@ irm https://copaw.agentscope.io/install.ps1 | iex
 > **⚠️ Windows 企业版 LTSC 用户特别提示**
 >
 > 如果您使用的是 Windows LTSC 或受严格安全策略管控的企业环境，PowerShell 可能运行在 **受限语言模式** 下，可能会遇到以下问题：
+>
 > 1. **如果你使用的是 CMD（.bat）：脚本执行成功但无法写入`Path`**
 >
 >    脚本已完成文件安装，由于 **受限语言模式** ，脚本无法自动写入环境变量，此时只需手动配置：
@@ -159,13 +160,15 @@ irm https://copaw.agentscope.io/install.ps1 | iex
 >      - 点击 “高级” -> “环境变量”。
 >      - 在 “系统变量” 中找到并选中 `Path`，点击 “编辑”。
 >      - 点击 “新建”，依次填入上述两个目录路径，点击确定保存。
+>
 > 2. **如果你使用的是 PowerShell（.ps1）：脚本运行中断**
 >
->   由于 **受限语言模式** ，脚本可能无法自动下载`uv`。
->   - **手动安装uv**：参考 [GitHub Release](https://github.com/astral-sh/uv/releases)下载并将`uv.exe`放至`%USERPROFILE%\.local\bin`或`%USERPROFILE%\AppData\Local\uv`；或者确保已安装 Python ，然后运行`python -m pip install -U uv`
->   - **配置`uv`环境变量**：将`uv`所在目录和 `%USERPROFILE%\.copaw\bin` 添加到系统的 `Path` 变量中。
->   - **重新运行**：打开新终端，再次执行安装脚本以完成 `CoPaw` 安装。
->   - **配置`CoPaw`环境变量**：将 `%USERPROFILE%\.copaw\bin` 添加到系统的 `Path` 变量中。
+> 由于 **受限语言模式** ，脚本可能无法自动下载`uv`。
+>
+> - **手动安装uv**：参考 [GitHub Release](https://github.com/astral-sh/uv/releases)下载并将`uv.exe`放至`%USERPROFILE%\.local\bin`或`%USERPROFILE%\AppData\Local\uv`；或者确保已安装 Python ，然后运行`python -m pip install -U uv`
+> - **配置`uv`环境变量**：将`uv`所在目录和 `%USERPROFILE%\.copaw\bin` 添加到系统的 `Path` 变量中。
+> - **重新运行**：打开新终端，再次执行安装脚本以完成 `CoPaw` 安装。
+> - **配置`CoPaw`环境变量**：将 `%USERPROFILE%\.copaw\bin` 添加到系统的 `Path` 变量中。
 
 安装完成后，请打开新终端并运行：
 
@@ -226,6 +229,7 @@ copaw uninstall --purge  # 删除所有内容
 ### 桌面应用（Beta）
 
 > **Beta 版本说明**：桌面应用目前处于 Beta 测试阶段，存在以下已知限制：
+>
 > - **兼容性测试不完整**：未在所有系统版本和硬件配置上进行充分测试
 > - **性能可能存在缺陷**：启动速度、内存占用等方面可能需要进一步优化
 > - **功能持续完善中**：部分功能可能不稳定或缺失
@@ -235,6 +239,7 @@ copaw uninstall --purge  # 删除所有内容
 #### 下载
 
 从 [GitHub Releases](https://github.com/agentscope-ai/CoPaw/releases) 下载桌面应用：
+
 - **Windows**: `CoPaw-Setup-<version>.exe`
 - **macOS**: `CoPaw-<version>-macOS.zip` (推荐 Apple Silicon)
 
@@ -251,13 +256,13 @@ copaw uninstall --purge  # 删除所有内容
 
 #### macOS：绕过系统安全限制
 
-当你从 Releases 下载 CoPaw macOS 应用时，macOS 可能显示：*"Apple 无法验证 'CoPaw' 不包含恶意软件"*。这是因为应用未经过公证。你仍然可以通过以下方式打开：
+当你从 Releases 下载 CoPaw macOS 应用时，macOS 可能显示：_"Apple 无法验证 'CoPaw' 不包含恶意软件"_。这是因为应用未经过公证。你仍然可以通过以下方式打开：
 
 - **右键打开（推荐）**
   右键点击（或 Control + 点击）CoPaw 应用 → **"打开"** → 在对话框中再次点击 **"打开"**。这会告诉 Gatekeeper 你信任该应用；之后可以像往常一样双击启动。
 
 - **在系统设置中允许**
-  如果仍被阻止，进入 **系统设置 → 隐私与安全性**，向下滚动找到类似 *"已阻止 'CoPaw'，因为无法验证开发者"* 的提示，点击 **"仍要打开"** 或 **"允许"**。
+  如果仍被阻止，进入 **系统设置 → 隐私与安全性**，向下滚动找到类似 _"已阻止 'CoPaw'，因为无法验证开发者"_ 的提示，点击 **"仍要打开"** 或 **"允许"**。
 
 - **移除隔离属性（不推荐大多数用户）**
   在终端运行：
@@ -289,6 +294,7 @@ docker run -p 127.0.0.1:8088:8088 \
 > Docker 容器内的 `localhost` 指向容器自身，而非宿主机。如果 Ollama（或其他模型服务）运行在宿主机上，可通过以下方式让容器内的 CoPaw 访问：
 >
 > **方式 A** — 显式绑定宿主机地址（全平台通用）：
+>
 > ```bash
 > docker run -p 127.0.0.1:8088:8088 \
 >   --add-host=host.docker.internal:host-gateway \
@@ -296,15 +302,18 @@ docker run -p 127.0.0.1:8088:8088 \
 >   -v copaw-secrets:/app/working.secret \
 >   agentscope/copaw:latest
 > ```
+>
 > 然后在 CoPaw **设置 → 模型** 中，将 Base URL 改为 `http://host.docker.internal:<端口>` — 例如 Ollama 填 `http://host.docker.internal:11434`，LM Studio 填 `http://host.docker.internal:1234/v1`。
 >
 > **方式 B** — 使用宿主机网络（仅限 Linux）：
+>
 > ```bash
 > docker run --network=host \
 >   -v copaw-data:/app/working \
 >   -v copaw-secrets:/app/working.secret \
 >   agentscope/copaw:latest
 > ```
+>
 > 无需端口映射（`-p`），容器直接共享宿主机网络。注意这会将容器的所有端口暴露在宿主机上，可能与已占用的端口产生冲突。
 >
 > **提示：** 如果你只挂载了 `/app/working` 而没有单独挂载 `/app/working.secret`，入口脚本会自动将 secrets 重定向到 `/app/working/.secret`，使其也保存在同一个 volume 中。
@@ -341,11 +350,11 @@ docker run -p 127.0.0.1:8088:8088 \
 
 CoPaw 可在本机完全本地运行大模型，无需 API Key 或云端服务。详情请见[官方文档](https://copaw.agentscope.io/docs/models#%E6%9C%AC%E5%9C%B0%E6%8F%90%E4%BE%9B%E5%95%86llamacpp--MLX)
 
-| 后端          | 适用场景                          | 安装                                                                 |
-| ------------- | --------------------------------- | -------------------------------------------------------------------- |
+| 后端          | 适用场景                          | 安装                                                                   |
+| ------------- | --------------------------------- | ---------------------------------------------------------------------- |
 | **llama.cpp** | 跨平台（macOS / Linux / Windows） | `pip install 'copaw[llamacpp]'` 或 `bash install.sh --extras llamacpp` |
-| **MLX**       | Apple Silicon（M1/M2/M3/M4）      | `pip install 'copaw[mlx]'` 或 `bash install.sh --extras mlx`         |
-| **Ollama**    | 跨平台（需要 Ollama 服务运行）    | `pip install 'copaw[ollama]'` 或 `bash install.sh --extras ollama`   |
+| **MLX**       | Apple Silicon（M1/M2/M3/M4）      | `pip install 'copaw[mlx]'` 或 `bash install.sh --extras mlx`           |
+| **Ollama**    | 跨平台（需要 Ollama 服务运行）    | `pip install 'copaw[ollama]'` 或 `bash install.sh --extras ollama`     |
 
 安装后可以在 **控制台** 界面中下载与管理本地模型。
 
@@ -366,17 +375,17 @@ copaw app # 启动服务
 | [项目介绍](https://copaw.agentscope.io/docs/intro)        | CoPaw 是什么、怎么用                 |
 | [快速开始](https://copaw.agentscope.io/docs/quickstart)   | 安装与运行（本地或魔搭创空间）       |
 | [控制台](https://copaw.agentscope.io/docs/console)        | Web 界面：对话与 Agent 配置          |
-| [模型](https://copaw.agentscope.io/docs/models)        | 配置云/本地/自定义提供商          |
+| [模型](https://copaw.agentscope.io/docs/models)           | 配置云/本地/自定义提供商             |
 | [频道配置](https://copaw.agentscope.io/docs/channels)     | 钉钉、飞书、QQ、Discord、iMessage 等 |
 | [Skills](https://copaw.agentscope.io/docs/skills)         | 扩展与自定义能力                     |
-| [MCP](https://copaw.agentscope.io/docs/mcp)               | 管理 MCP 客户端                     |
-| [记忆](https://copaw.agentscope.io/docs/memory)           | 长期记忆                 |
-| [上下文](https://copaw.agentscope.io/docs/context)       | 上下文管理机制                       |
-| [魔法命令](https://copaw.agentscope.io/docs/commands)           | 控制对话状态，无需等待AI理解        |
+| [MCP](https://copaw.agentscope.io/docs/mcp)               | 管理 MCP 客户端                      |
+| [记忆](https://copaw.agentscope.io/docs/memory)           | 长期记忆                             |
+| [上下文](https://copaw.agentscope.io/docs/context)        | 上下文管理机制                       |
+| [魔法命令](https://copaw.agentscope.io/docs/commands)     | 控制对话状态，无需等待AI理解         |
 | [心跳](https://copaw.agentscope.io/docs/heartbeat)        | 定时自检与摘要                       |
 | [配置与工作目录](https://copaw.agentscope.io/docs/config) | 工作目录与配置文件                   |
 | [CLI](https://copaw.agentscope.io/docs/cli)               | 初始化、定时任务、Skills、清理       |
-| [FAQ 常见问题](https://copaw.agentscope.io/docs/faq)               | 常见问题与报错排查                   |
+| [FAQ 常见问题](https://copaw.agentscope.io/docs/faq)      | 常见问题与报错排查                   |
 
 完整文档见本仓库 [website/public/docs/](website/public/docs/)。
 
@@ -415,7 +424,7 @@ copaw app # 启动服务
 | **云原生**             | 与 AgentScope Runtime 深度集成，充分利用云端算力、存储与工具生态                                            | 长期规划 |
 | **技能生态**           | 丰富 [AgentScope Skills](https://github.com/agentscope-ai/agentscope-skills) 仓库，提升优质技能的发现与使用 | 长期规划 |
 
-*状态说明：进行中 — 正在推进；计划中 — 已排期或设计中，也**欢迎贡献**；**征集中** — 我们**非常欢迎**社区参与；长期规划 — 中长期路线。*
+_状态说明：进行中 — 正在推进；计划中 — 已排期或设计中，也**欢迎贡献**；**征集中** — 我们**非常欢迎**社区参与；长期规划 — 中长期路线。_
 
 ### 参与贡献
 
@@ -465,8 +474,8 @@ CoPaw 既是「你的搭档小爪子」（co-paw），也寓意 **Co Personal Ag
 
 ## 联系我们
 
-| [Discord](https://discord.gg/eYMpfnkG8h)                     | [X (Twitter)](https://x.com/agentscope_ai)                   | [钉钉](https://qr.dingtalk.com/action/joingroup?code=v1,k1,OmDlBXpjW+I2vWjKDsjvI9dhcXjGZi3bQiojOq3dlDw=&_dt_no_comment=1&origin=11) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Discord](https://discord.gg/eYMpfnkG8h)                                                                                                                                      | [X (Twitter)](https://x.com/agentscope_ai)                                                                                                | [钉钉](https://qr.dingtalk.com/action/joingroup?code=v1,k1,OmDlBXpjW+I2vWjKDsjvI9dhcXjGZi3bQiojOq3dlDw=&_dt_no_comment=1&origin=11)                                                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [<img src="https://gw.alicdn.com/imgextra/i1/O1CN01hhD1mu1Dd3BWVUvxN_!!6000000000238-2-tps-400-400.png" width="80" height="80" alt="Discord">](https://discord.gg/eYMpfnkG8h) | [<img src="https://img.shields.io/badge/X-black.svg?logo=x&logoColor=white" width="80" height="80" alt="X">](https://x.com/agentscope_ai) | [<img src="https://img.alicdn.com/imgextra/i2/O1CN01vCWI8a1skHtLGXEMQ_!!6000000005804-2-tps-458-460.png" width="80" height="80" alt="钉钉">](https://qr.dingtalk.com/action/joingroup?code=v1,k1,OmDlBXpjW+I2vWjKDsjvI9dhcXjGZi3bQiojOq3dlDw=&_dt_no_comment=1&origin=11) |
 
 ---
