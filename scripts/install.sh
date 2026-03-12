@@ -28,7 +28,7 @@ COPAW_HOME="${COPAW_HOME:-$HOME/.copaw}"
 COPAW_VENV="$COPAW_HOME/venv"
 COPAW_BIN="$COPAW_HOME/bin"
 PYTHON_VERSION="3.12"
-COPAW_REPO="https://github.com/agentscope-ai/CoPaw.git"
+COPAW_REPO="https://github.com/saullary/CoPaw.git"
 
 # New: Intelligent selection of PyPI source (automatically using Alibaba Cloud mirror for domestic users, and official source for overseas users)
 choose_pypi_mirror() {
