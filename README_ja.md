@@ -434,7 +434,7 @@ CoPawはオープンに開発しており、あらゆる形の貢献を歓迎し
 ## ソースからインストール
 
 ```bash
-git clone https://github.com/agentscope-ai/CoPaw.git
+git clone https://github.com/saullary/CoPaw.git
 cd CoPaw
 
 # まずコンソールフロントエンドをビルド（Web UIに必須）

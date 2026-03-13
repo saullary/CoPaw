@@ -434,7 +434,7 @@ Join the conversation on [GitHub Discussions](https://github.com/agentscope-ai/C
 ## Install from source
 
 ```bash
-git clone https://github.com/agentscope-ai/CoPaw.git
+git clone https://github.com/saullary/CoPaw.git
 cd CoPaw
 
 # Build console frontend first (required for web UI)
