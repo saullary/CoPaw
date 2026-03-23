@@ -36,7 +36,7 @@ dependencies = [
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "d c la w.__version__.__version__"}
+version = {attr = "dclaw.__version__.__version__"}
 
 [tool.setuptools]
 packages = { find = { where = ["src"] } }
