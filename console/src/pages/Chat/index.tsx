@@ -766,7 +766,7 @@ export default function ChatPage() {
         ...i18nConfig.welcome,
         avatar: isDark
           ? `${import.meta.env.BASE_URL}copaw-dark.png`
-          : `${import.meta.env.BASE_URL}copaw-symbol.svg`,
+          : `${import.meta.env.BASE_URL}logo2.png`,
       },
       sender: {
         ...(i18nConfig as any)?.sender,
@@ -817,7 +817,8 @@ export default function ChatPage() {
         fetch: customFetch,
         cancel(data: { session_id: string }) {
           const chatIdForStop = data?.session_id
-            ? sessionApi.getRealIdForSession(data.session_id) ?? data.session_id
+            ? (sessionApi.getRealIdForSession(data.session_id) ??
+              data.session_id)
             : "";
           if (chatIdForStop) {
             chatApi.stopConsoleChat(chatIdForStop).then(

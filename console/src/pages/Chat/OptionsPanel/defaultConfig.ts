@@ -7,7 +7,7 @@ const defaultConfig = {
     prefix: "copaw",
     leftHeader: {
       logo: "",
-      title: "Work with CoPaw",
+      title: "Work with Dclaw",
     },
   },
   sender: {
@@ -19,7 +19,7 @@ const defaultConfig = {
     greeting: "Hello, how can I help you today?",
     description:
       "I am a helpful assistant that can help you with your questions.",
-    avatar: `${import.meta.env.BASE_URL}copaw-symbol.svg`,
+    avatar: `${import.meta.env.BASE_URL}logo2.png`,
     prompts: [
       {
         value: "Let's start a new journey!",

@@ -80,29 +80,29 @@ html.dark-mode .ant-table-wrapper {
   background: #1f1f1f !important;
 }
 
-html.dark-mode .copaw-table-thead > tr > th,
-html.dark-mode .ant-table-thead > tr > th,
-html.dark-mode .copaw-table-thead > tr > td,
-html.dark-mode .ant-table-thead > tr > td {
+html.dark-mode .copaw-table-thead>tr>th,
+html.dark-mode .ant-table-thead>tr>th,
+html.dark-mode .copaw-table-thead>tr>td,
+html.dark-mode .ant-table-thead>tr>td {
   background: #262626 !important;
   color: rgba(255, 255, 255, 0.65) !important;
   border-bottom-color: rgba(255, 255, 255, 0.08) !important;
 }
 
-html.dark-mode .copaw-table-tbody > tr > td,
-html.dark-mode .ant-table-tbody > tr > td {
+html.dark-mode .copaw-table-tbody>tr>td,
+html.dark-mode .ant-table-tbody>tr>td {
   background: #1f1f1f !important;
   color: rgba(255, 255, 255, 0.85) !important;
   border-bottom-color: rgba(255, 255, 255, 0.06) !important;
 }
 
-html.dark-mode .copaw-table-tbody > tr:hover > td,
-html.dark-mode .ant-table-tbody > tr:hover > td {
+html.dark-mode .copaw-table-tbody>tr:hover>td,
+html.dark-mode .ant-table-tbody>tr:hover>td {
   background: #2a2a2a !important;
 }
 
-html.dark-mode .copaw-table-tbody > tr.copaw-table-row-selected > td,
-html.dark-mode .ant-table-tbody > tr.ant-table-row-selected > td {
+html.dark-mode .copaw-table-tbody>tr.copaw-table-row-selected>td,
+html.dark-mode .ant-table-tbody>tr.ant-table-row-selected>td {
   background: rgba(97, 92, 237, 0.12) !important;
 }
 
@@ -264,8 +264,8 @@ html.dark-mode .ant-select-item-option-selected {
 }
 
 /* Form labels */
-html.dark-mode .copaw-form-item-label > label,
-html.dark-mode .ant-form-item-label > label {
+html.dark-mode .copaw-form-item-label>label,
+html.dark-mode .ant-form-item-label>label {
   color: rgba(255, 255, 255, 0.65) !important;
 }
 
@@ -308,8 +308,8 @@ html.dark-mode .ant-picker {
   color: rgba(255, 255, 255, 0.85) !important;
 }
 
-html.dark-mode .copaw-picker-input > input,
-html.dark-mode .ant-picker-input > input {
+html.dark-mode .copaw-picker-input>input,
+html.dark-mode .ant-picker-input>input {
   color: rgba(255, 255, 255, 0.85) !important;
 }
 
@@ -334,12 +334,8 @@ html.dark-mode .ant-picker-time-panel-cell-inner {
   color: rgba(255, 255, 255, 0.85) !important;
 }
 
-html.dark-mode
-  .copaw-picker-time-panel-cell-selected
-  .copaw-picker-time-panel-cell-inner,
-html.dark-mode
-  .ant-picker-time-panel-cell-selected
-  .ant-picker-time-panel-cell-inner {
+html.dark-mode .copaw-picker-time-panel-cell-selected .copaw-picker-time-panel-cell-inner,
+html.dark-mode .ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
   background: rgba(97, 92, 237, 0.2) !important;
   color: #8b87f0 !important;
 }
@@ -439,12 +435,9 @@ html.dark-mode .ant-picker-cell-in-range .ant-picker-cell-inner {
 /* Range hover preview */
 html.dark-mode .copaw-picker-cell-in-view.copaw-picker-cell-range-hover::before,
 html.dark-mode .ant-picker-cell-in-view.ant-picker-cell-range-hover::before,
-html.dark-mode
-  .copaw-picker-cell-in-view.copaw-picker-cell-range-hover-start::after,
-html.dark-mode
-  .ant-picker-cell-in-view.ant-picker-cell-range-hover-start::after,
-html.dark-mode
-  .copaw-picker-cell-in-view.copaw-picker-cell-range-hover-end::after,
+html.dark-mode .copaw-picker-cell-in-view.copaw-picker-cell-range-hover-start::after,
+html.dark-mode .ant-picker-cell-in-view.ant-picker-cell-range-hover-start::after,
+html.dark-mode .copaw-picker-cell-in-view.copaw-picker-cell-range-hover-end::after,
 html.dark-mode .ant-picker-cell-in-view.ant-picker-cell-range-hover-end::after {
   border-color: #8b87f0 !important;
 }
@@ -462,8 +455,8 @@ html.dark-mode .ant-picker-today-btn {
 }
 
 /* Divider between two panels in RangePicker */
-html.dark-mode .copaw-picker-panel + .copaw-picker-panel,
-html.dark-mode .ant-picker-panel + .ant-picker-panel {
+html.dark-mode .copaw-picker-panel+.copaw-picker-panel,
+html.dark-mode .ant-picker-panel+.ant-picker-panel {
   border-left-color: rgba(255, 255, 255, 0.08) !important;
 }
 
@@ -532,9 +525,9 @@ html.dark-mode .copaw-modal-confirm-paragraph {
 }
 
 /* Form labels inside modal */
-html.dark-mode .copaw-modal-body .copaw-form-item-label > label,
-html.dark-mode .copaw-modal-body .ant-form-item-label > label,
-html.dark-mode .ant-modal-body .ant-form-item-label > label {
+html.dark-mode .copaw-modal-body .copaw-form-item-label>label,
+html.dark-mode .copaw-modal-body .ant-form-item-label>label,
+html.dark-mode .ant-modal-body .ant-form-item-label>label {
   color: rgba(255, 255, 255, 0.65) !important;
 }
 
@@ -584,9 +577,9 @@ html.dark-mode .ant-drawer-footer {
 }
 
 /* Form labels inside drawer */
-html.dark-mode .copaw-drawer-body .copaw-form-item-label > label,
-html.dark-mode .copaw-drawer-body .ant-form-item-label > label,
-html.dark-mode .ant-drawer-body .ant-form-item-label > label {
+html.dark-mode .copaw-drawer-body .copaw-form-item-label>label,
+html.dark-mode .copaw-drawer-body .ant-form-item-label>label,
+html.dark-mode .ant-drawer-body .ant-form-item-label>label {
   color: rgba(255, 255, 255, 0.65) !important;
 }
 
@@ -633,9 +626,7 @@ html.dark-mode .ant-tooltip-arrow::before {
 }
 
 /* Disabled chat input overlay in dark mode */
-html.dark-mode
-  [class*="chatDisabledOverlay"]
-  :global([class*="chat-anywhere-input"]),
+html.dark-mode [class*="chatDisabledOverlay"] :global([class*="chat-anywhere-input"]),
 html.dark-mode [class*="chatDisabledOverlay"] :global([class*="chat-input"]),
 html.dark-mode [class*="chatDisabledOverlay"] :global(textarea),
 html.dark-mode [class*="chatDisabledOverlay"] :global(input[type="text"]) {
@@ -729,7 +720,7 @@ html.dark-mode [class*="chat-anywhere"] [class*="message"] a {
   padding: 0;
 }
 
-/* Welcome avatar: full tall SVG. Class is CoPaw-avatar (no "ant"). */
+/* Welcome avatar: full tall SVG. Class is Dclaw-avatar (no "ant"). */
 [class*="chat-anywhere-welcome-default"] [class*="-avatar"],
 [class*="message-list-welcome"] [class*="welcome-default"] [class*="-avatar"] {
   width: 36px !important;
@@ -738,13 +729,14 @@ html.dark-mode [class*="chat-anywhere"] [class*="message"] a {
   min-height: 48px !important;
   overflow: visible !important;
 }
-[class*="chat-anywhere-welcome-default"] [class*="-avatar"] > img,
-[class*="message-list-welcome"] [class*="-avatar"] > img {
+
+[class*="chat-anywhere-welcome-default"] [class*="-avatar"]>img,
+[class*="message-list-welcome"] [class*="-avatar"]>img {
   object-fit: contain !important;
   object-position: center;
 }
 
-/* Move rightHeader to the leftmost position of the right header area (CoPaw chat) */
+/* Move rightHeader to the leftmost position of the right header area (Dclaw chat) */
 [class*="chat-anywhere-default-header-right"],
 [class*="default-header-right"],
 [class*="copaw-chat-anywhere-default-header-right"],
@@ -753,8 +745,9 @@ html.dark-mode [class*="chat-anywhere"] [class*="message"] a {
   margin: 0 auto 0 0 !important;
   justify-content: flex-start !important;
 }
-[class*="chat-anywhere-default-header-right"] > *,
-[class*="default-header-right"] > * {
+
+[class*="chat-anywhere-default-header-right"]>*,
+[class*="default-header-right"]>* {
   margin-right: auto !important;
   margin-left: 0 !important;
 }
