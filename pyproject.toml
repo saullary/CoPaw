@@ -36,15 +36,15 @@ dependencies = [
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "dclaw.__version__.__version__"}
+version = {attr = "copaw.__version__.__version__"}
 
 [tool.setuptools]
 packages = { find = { where = ["src"] } }
 include-package-data = true
 
 [tool.setuptools.package-data]
-# Dockerfile copies console build output to src/dclaw/console/ (no dist subdir).
-"dclaw" = [
+# Dockerfile copies console build output to src/copaw/console/ (no dist subdir).
+"copaw" = [
     "console/**",
     "agents/md_files/**",
     "agents/skills/**",
@@ -59,7 +59,7 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project.scripts]
-dclaw = "dclaw.cli.main:cli"
+copaw = "copaw.cli.main:cli"
 
 [project.optional-dependencies]
 dev = [
@@ -72,11 +72,11 @@ local = [
     "huggingface_hub>=0.20.0",
 ]
 llamacpp = [
-    "dclaw[local]",
+    "copaw[local]",
     "llama-cpp-python>=0.3.0",
 ]
 mlx = [
-    "dclaw[local]",
+    "copaw[local]",
     "mlx-lm>=0.10.0; sys_platform == 'darwin'",
 ]
 ollama = [
@@ -86,7 +86,7 @@ whisper = [
     "openai-whisper>=20231117",
 ]
 full = [
-    "dclaw[local,ollama,llamacpp,whisper]",
+    "copaw[local,ollama,llamacpp,whisper]",
     "mlx-lm>=0.10.0; sys_platform == 'darwin'",
 ]
 

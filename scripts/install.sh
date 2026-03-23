@@ -231,13 +231,13 @@ if [ "$FROM_SOURCE" = true ]; then
         # CLONE_DIR is cleaned up by trap; no need for cleanup_console
     fi
 else
-    PACKAGE="copaw"
+    PACKAGE="dclaw"
     if [ -n "$VERSION" ]; then
         PACKAGE="copaw==$VERSION"
     fi
 
     info "Installing ${PACKAGE}${EXTRAS_SUFFIX} from PyPI..."
-    uv pip install "${PACKAGE}${EXTRAS_SUFFIX}" --python "$COPAW_VENV/bin/python" --prerelease=allow --quiet --index-url "$PYPI_MIRROR" --refresh-package copaw
+    uv pip install "${PACKAGE}${EXTRAS_SUFFIX}" --python "$COPAW_VENV/bin/python" --prerelease=allow --quiet --index-url "$PYPI_MIRROR" --refresh-package dclaw
 fi
 
 # Verify the CLI entry point exists
