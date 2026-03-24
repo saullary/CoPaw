@@ -46,7 +46,7 @@ export default function Header({ selectedKey }: HeaderProps) {
       </span>
       <Space size="middle">
         <AgentSelector />
-        <Tooltip title={t("header.changelog")}>
+        {/* <Tooltip title={t("header.changelog")}>
           <Button
             icon={<FileTextOutlined />}
             type="text"
@@ -54,7 +54,7 @@ export default function Header({ selectedKey }: HeaderProps) {
           >
             {t("header.changelog")}
           </Button>
-        </Tooltip>
+        </Tooltip> */}
         <Tooltip title={t("header.docs")}>
           <Button
             icon={<BookOutlined />}
@@ -77,7 +77,7 @@ export default function Header({ selectedKey }: HeaderProps) {
           <Button
             icon={<GithubOutlined />}
             type="text"
-            onClick={() => handleNavClick(GITHUB_URL)}
+            onClick={() => handleNavClick("https://github.com/dgridai")}
           >
             {t("header.github")}
           </Button>
