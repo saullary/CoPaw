@@ -4,7 +4,7 @@ import ThemeToggleButton from "../components/ThemeToggleButton";
 import AgentSelector from "../components/AgentSelector";
 import { useTranslation } from "react-i18next";
 import {
-  FileTextOutlined,
+  // FileTextOutlined,
   BookOutlined,
   QuestionCircleOutlined,
   GithubOutlined,
