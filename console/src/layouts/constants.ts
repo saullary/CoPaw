@@ -2,7 +2,7 @@
 
 export const PYPI_URL = "https://pypi.org/pypi/copaw/json";
 
-export const GITHUB_URL = "https://github.com/saullary/CoPaw" as const;
+export const GITHUB_URL = "https://github.com/dgridai" as const;
 
 // ── Timing ────────────────────────────────────────────────────────────────
 

@@ -16,7 +16,7 @@ import {
   KEY_TO_LABEL,
   getDocsUrl,
   getFaqUrl,
-  getReleaseNotesUrl,
+  // getReleaseNotesUrl,
 } from "./constants";
 
 const { Header: AntHeader } = Layout;
@@ -77,7 +77,7 @@ export default function Header({ selectedKey }: HeaderProps) {
           <Button
             icon={<GithubOutlined />}
             type="text"
-            onClick={() => handleNavClick("https://github.com/dgridai")}
+            onClick={() => handleNavClick(GITHUB_URL)}
           >
             {t("header.github")}
           </Button>
