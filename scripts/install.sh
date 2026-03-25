@@ -32,15 +32,15 @@ COPAW_REPO="https://github.com/saullary/CoPaw.git"
 
 # New: Intelligent selection of PyPI source (automatically using Alibaba Cloud mirror for domestic users, and official source for overseas users)
 choose_pypi_mirror() {
-    # Test the connectivity of the official PyPI source (timeout 3 seconds, no output)
-    if curl -s --connect-timeout 3 https://pypi.org/simple/ > /dev/null 2>&1; then
-        echo "https://pypi.org/simple/"
-        info "Using official PyPI source (network is good)" >&2
-    else
-        echo "https://mirrors.aliyun.com/pypi/simple/"
-        info "Using Aliyun PyPI mirror (official source is unreachable)" >&2
-    fi
-}
+      # Prefer Aliyun mirror, fallback to official
+      if curl -s --connect-timeout 3 https://mirrors.aliyun.com/pypi/simple/ > /dev/null 2>&1; then
+          echo "https://mirrors.aliyun.com/pypi/simple/"
+          info "Using Aliyun PyPI mirror (preferred)" >&2
+      else
+          echo "https://pypi.org/simple/"
+          info "Using official PyPI source (mirror unreachable)" >&2
+      fi
+  }
 PYPI_MIRROR=$(choose_pypi_mirror)
 
 # New: Automatically clear old virtual environments and skip interactive prompts
