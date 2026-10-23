@@ -2,7 +2,7 @@ import {
   Layout,
   Menu,
   Button,
-  Badge,
+  // Badge,
   Modal,
   Spin,
   Tooltip,
@@ -386,7 +386,7 @@ export default function Sidebar({ selectedKey }: SidebarProps) {
               alt="CoPaw"
               className={styles.logoImg}
             />
-            {version && (
+            {/* {version && (
               <Badge dot={!!hasUpdate} color="red" offset={[4, 18]}>
                 <span
                   className={`${styles.versionBadge} ${
@@ -399,7 +399,7 @@ export default function Sidebar({ selectedKey }: SidebarProps) {
                   v{version}
                 </span>
               </Badge>
-            )}
+            )} */}
           </div>
         )}
         <Button
